@@ -46,11 +46,12 @@ class WebCrawler:
 def main():
     crawler = WebCrawler()
     start_url = "https://example.com"
+
     crawler.crawl(start_url)
 
     keyword = "test"
     results = crawler.search(keyword)
-    crawler.print_results(results)
+crawler.crawl(start_url)    crawler.print_results(results)
 
 import unittest
 from unittest.mock import patch, MagicMock
@@ -112,5 +113,4 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
-
 
