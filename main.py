@@ -46,11 +46,12 @@ class WebCrawler:
 def main():
     crawler = WebCrawler()
     start_url = "https://example.com"
-    crawler.craw(start_url)
+
+    crawler.crawl(start_url)
 
     keyword = "test"
     results = crawler.search(keyword)
-    crawler.print_results(results)
+crawler.crawl(start_url)    crawler.print_results(results)
 
 import unittest
 from unittest.mock import patch, MagicMock
@@ -86,6 +87,7 @@ class WebCrawlerTests(unittest.TestCase):
         crawler = WebCrawler()
         crawler.crawl("https://example.com")
 
+
         # Assertions to check if the error was logged (you'll
         # likely need to set up logging capture in your tests)
 
@@ -111,3 +113,4 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
