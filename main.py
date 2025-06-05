@@ -112,6 +112,4 @@ if __name__ == "__main__":
     main()  # Run your main application logic 
 
 
-if __name__ == "__main__":
-    main()
 
